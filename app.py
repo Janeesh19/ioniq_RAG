@@ -14,7 +14,7 @@ st.set_page_config(page_title="IONIQ 5 Sales RAG Assistant", page_icon="🚗", l
 # ——— Configuration ———
 GOOGLE_API_KEY = st.secrets["GOOGLE_API_KEY"]
 GENAI_MODEL      = os.environ.get("GENAI_MODEL", "models/gemini-2.0-flash-001")
-DATA_FILE_PATH   = os.environ.get("DATA_FILE_PATH", "/home/janeesh/Documents/ioniq.csv")
+DATA_FILE_PATH   = os.environ.get("DATA_FILE_PATH", "ioniq.csv")
 QDRANT_URL       = "https://2bb626d0-8e3b-4aa5-87ba-03803e523506.eu-west-2-0.aws.cloud.qdrant.io:6333"
 QDRANT_API_KEY   = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhY2Nlc3MiOiJtIn0.ZYF3sjRoh_oJE49OhXZji6f1yQqBQAccxpsz83TFPt4"
 COLLECTION_NAME  = "rag_qa"
